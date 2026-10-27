@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ProductName:</h1>
+    <input type="text" name="" id="p1"><br>
+    <h1>Price</h1>
+    <input type="number"name="" id="p2"><br>
+    <h1>Quantity</h1>
+    <input type="number"name="" id="p3">
+    <button type="submit" id="b1">Submit</button>
+    <script>
+        const b1=document.getElementById(b1);
+        b1.addEventListener("click",()=>{
+            const p1=document.getElementById(p1);
+            p1reg=/^[A-za-z]+$/;
+            const p2=document.getElementById(p2);
+             p1reg=/^[\d]+$/;
+            const p3=document.getElementById(p3);
+
+            if(!p1reg.test(p1)){
+                alert("cannot be null")
+            }
+            else{
+                alert("ok")
+            }
+            
+            
+
+        })
+    </script>
+</body>
+</html>
